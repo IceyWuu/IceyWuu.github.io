@@ -1,0 +1,83 @@
+/* body{
+    
+  } */
+@font-face {
+    font-family: Dancing Script;
+    src: url('./ttf/Dancing\ Script.ttf');
+}
+@font-face {
+    font-family: LuckiestGuy;
+    src: url('./ttf/LuckiestGuy.ttf');
+}
+
+/* when the screen size less than 600px, need a extra css to make some change*/
+@media(max-width:600px){
+    .delsidebar{
+        display: none;
+    }
+    .colcontent{
+        flex-direction: column;
+    }
+    .coldata{
+        flex-direction: column;
+    }
+    .marright{
+        margin-left: 8px;
+    }
+    .mardata{
+        margin: 0 0 8px;
+        flex:auto;
+    }
+}
+
+.flex{
+    display: flex; 
+}
+.white{
+    background-color: white;
+}
+.column{
+    flex-direction: column;
+}
+.flex1{
+    flex: 1;
+}
+
+
+
+/* dropdown items setting begins*/
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: #e6462d;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    z-index: 1;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    min-width: 160px;
+  }
+  .dropdown-content a {
+    float: none;
+    color: #e6462d;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    color: #e97968;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* dropdown items setting ends*/
