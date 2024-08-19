@@ -8,11 +8,34 @@
     <link href="/same.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="./pictures/random/ice.png" type="image/x-icon">
     <style>
+        /* scrollbar */
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #f5d7d7;
+            border-radius: 20px;
+            border: 6px solid transparent;
+            background-clip: content-box;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #b18597;
+        }
+
         body{
             margin : 0;
             height: 100vh;
             background-color: #eee;
             cursor: url('./pictures/random/cursor_bowtie.png'), default;
+            font-family: "Great Primer";
+
+            background: url("./pictures/background/heart.png");
+            /* background-color: #faddbb; */
+   
             /* background:
             radial-gradient(circle closest-side at 60% 43%, rgb(255, 255, 255) 26%, rgba(187,0,51,0) 27%),
             radial-gradient(circle closest-side at 40% 43%, rgb(255, 255, 255) 26%, rgba(187,0,51,0) 27%),
@@ -28,11 +51,23 @@
             background-color:rgb(255, 255, 255) 26%;
             background-size:100px 100px; */
         }
-        *{
+        /* *{
             border: 1px solid black;
+        } */
+        .transparent{
+            background-color: transparent;
         }
-        .white{
-            background-color: white;
+        .box {
+            margin: 15px;
+            background-color: #f2e8d3;
+            border: 2px solid black;
+            padding: 15px;
+            /* width: 850px; */
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-color: #443737;
         }
 
     </style>
@@ -43,73 +78,113 @@
                 padding: 10px; 
                 align-items: center; 
                 justify-content: center;">
-        <!-- main content -->
-        <dev class="flex column" style="width: 1000px;">
-            <!-- poster -->
-            <dev class="flex column white" style="width: 1000px;">
-                <img 
+                <!-- poster -->
+        <dev class="flex column transparent" style="width: 100%;">
+            <img 
                 src="./pictures/mylove/birthday.png" 
-                width="1000 px"
+                width="100%"
                 alt="">
             <img 
                 src="./pictures/mylove/banners.png" 
-                width="1000 px"
+                width="100%"
                 alt="">
-            </dev>
+        </dev>
+        <!-- main content -->
+        <dev class="flex column transparent" style="width: 60%;">
+            <!-- poster -->
+            <!-- <dev class="flex column transparent" style="width: 100%;">
+                <img 
+                    src="./pictures/mylove/birthday.png" 
+                    width="100%"
+                    alt="">
+                <img 
+                    src="./pictures/mylove/banners.png" 
+                    width="100%"
+                    alt="">
+            </dev> -->
             <!-- title -->
-            <dev class = "flex" style="justify-content: center;">
-                <p style=" font-size: 60px; color: rgb(230, 190, 88);">
+            <dev class = "flex" style="justify-content: center; padding: 5px;">
+                <!-- <p style=" font-size: 60px; color: rgb(230, 190, 88);">
                     <span style="font-family: 'LuckiestGuy';">Happy birthday to my baby!😚</span>
                 </p>
-                <p style="font-family: 'LuckiestGuy';">2024.8.24</p>
+                <p style="font-family: 'LuckiestGuy';">2024.8.24</p> -->
             </dev>
             <!-- content -->
-            <dev class = "flex column">
+            <dev class = "flex column transparent box" style="padding: 5px; align-items: center;">
+                <p style=" font-size: 60px; color: rgb(230, 190, 88);">
+                    <span style="font-family: 'LuckiestGuy';">Happy birthday to my baby!😚🎉</span>
+                </p>
+                <!-- <p style="font-family: 'LuckiestGuy';">2024.8.24</p> -->
+                <p style="border-top: 2px solid #999; font-size: 20px; color: rgb(197, 143, 7);">༻✧༺ </p>
                 <div>
-                    <p>Today is my baby's birthday. He is a cute baby —— a little cat🐱.
-                        Sometimes he acts like a adorable puppy, sometimes acts like a strong tiger.
-                        No matter what he looks like, I love him sooooo much🥰.
+                    <p>
+                        Today is my baby's birthday! He's such a cute little cat 🐱. I love him soooo much 🥰.
                     </p>
                 </div>
                 <div>
-                    <div>
+                    <div class="flex">
                         <p>
-                            We met in my college in 2021 Nov. At first he's working hard to building a unmanned aerial vehicle
-                            with a bunch of fallen leaves(a very smart cat). I can tell he's trying hard to make the UAV 
-                            flying, and even forget to clean his body and eat his favourite fish! I don't pay much attention
-                            on him at first. But then, I met him by chance many times. So I just got more and more 
-                            familiar with this cat, and help him build a car with leaves.. That's cute. From then on, 
-                            we met almost everyday! And I gradually kind of like him and love this little cat. I've try
-                            to bring him back home once. But I don't have the ability to make money to feed him or 
-                            give him a comfortable home, so I just let him go to live by himself😭.                        
+                            We met in college in November 2021. At first, he was working hard to build an
+                             unmanned aerial vehicle (he's a very smart cat!).
+                              I could tell he was really trying to make it fly, so much so that he even forgot
+                               to clean himself and have meals. I didn't pay much attention to him at first, 
+                               but then I started running into him by chance more and more often. We attended 
+                               classes together and worked on building a car by chance. Over time, this led us 
+                               to get to know each other better. It was cute. Then we met almost every day, 
+                               and I gradually started to really like and then love this little cat. 
+                               I even tried to bring him home once. Looking forward to our own home 🤗.               
                         </p>
+                        <img src="./pictures/mylove/heart_stone.gif " width="15%" height="15%">
                     </div>
                     <div class="flex" style="flex-direction: row-reverse;">
-                        <img src="./pictures/mylove/cat_pixel.gif" width="60px">
+                        <img src="./pictures/mylove/cat_pixel.gif" width="5%">
                     </div>
                 </div>
 
+                <p style="border-top: 2px solid #999; font-size: 20px; color: rgb(197, 143, 7);" >༻✧༺ </p>
                 <div class="flex">
-                    <div style="width: 200px;">
-                        <img src="./pictures/mylove/worker.gif" width="200px">
+                    <div style="width: 20%;">
+                        <img src="./pictures/mylove/worker.gif" width="100%">
                     </div>
                     <div class="flex flex1 column">
-                        <p>Recently, he's working so hard to make a living. As you known that it's hard
-                            to get foods in the cities, and it's full of dangers. There's too many stress.
-                            I go to his place every weekend, to check if he's fine. But sometimes when he get ill,
-                            he won't let me approach him. He don't want to make me feel ill too. 
-                            I need to work harder to make good money, that day I'll come to he
-                            and bring him back home —— our home. All I hope now, is that he will be fine and happy.
+                        
+                        <p>
+                            I loved his mind—his thought processes were so different from mine. 
+                            Our values were so similar, so in sync; everything felt like it was 
+                            meant to be. He has never judged me or made me feel less than someone else. 
+                            He accepts everything about me, even more than I accept myself.
+                            I have never personally experienced this kind of love before him.
+                            He makes me feel like he would still love me even if I did nothing 
+                            and just laid around every day (even though I wouldn't do it).
+                            I'm thankful to have him in my life and regret not meeting him earlier. 
+                            
                         </p>
+                        <p>
+                            Recently, he's been working hard to make a living—good 
+                            for him! But the stress is really piling up. 
+                            I've never felt so deeply that I wanted someone to succeed and be happy.
+                            Happy birthday to you! bb! Wish you happy every day!
+                        </p>    
                         <!-- <div class="flex flex1" style="justify-content: space-around;">
                             <img src="./pictures/mylove/heart.gif " width="200px" height="230px">
                             <img src="./pictures/mylove/heart_stone.gif " width="230px" height="230px">
                         </div> -->
                     </div>
                 </div>
+                <p style="font-family: 'LuckiestGuy';">2024.8.24</p>
             </dev>
         </dev>
-
+        <div class="flex column" style="justify-content: center; align-items: center;">
+            <footer>
+                © 2024-<script>document.write(new Date().getFullYear())</script>
+            </footer>
+            <footer>
+                <strong>Created independently, to record my life.</strong>
+            </footer>
+            <footer>
+                Best viewed on a desktop.
+            </footer>
+        </div>
     </dev>
 </body>
 </html>
