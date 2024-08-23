@@ -1,0 +1,188 @@
+body {
+    background-color: #fff;
+    font-family: Nunito;
+    color: #ac1e44;
+    /* background-image: url('/images/bg/messy\ lines\ grid.webp'); */
+    background-image: url('../pictures/background/jigsaw.svg');
+    background-image: url('../pictures/background/clouds.jpg');
+    /* background-size: 350px; */
+    /* background-size: 200px; */
+  }
+
+/* === main working area=== */
+.main {
+    background-color:transparent;
+    color: #000000;
+    overflow: auto;
+    margin: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 3%;
+    padding-top: 1%;
+    text-align: center;
+    }
+
+/* === header === */
+@media only screen and (max-width:600px){
+    #header {
+        font-size: 32px;
+        }
+    }
+
+/* '#'符号用于选择具有特定id属性的元素。也就是说，#header选择的是id为header的元素 */
+#header {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: Strawberry Muffins Demo;
+    }
+      
+.header img {
+    display:block;
+    max-width: 100%;
+    max-height: auto;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+/* === button === */
+.button {
+    background-color: #F5F5F0;
+    border: 1px #0f3356 solid;
+    border-radius: 4px;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0c1c3b;
+    padding: 5px;
+    margin: 0.5%;
+    text-decoration: none;
+    line-height: 40px;
+    }
+.button:hover{
+    background-color: #919aa6;
+    color: #F5F5F0;
+    border: 1px #F5F5F0 solid;
+    }
+
+/* === text style === */
+.text {
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 18px;
+}
+.introduction {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 18px;
+}
+.headline {
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 当屏幕宽度小于或等于600px时，text类的元素将会有3像素的左边距和右边距。 */
+/* 保证小屏幕的正常查看。@media only screen and (max-width:600px)是媒体查询 */
+@media only screen and (max-width:600px){
+        .text {
+            margin-left: 3px;
+            margin-right: 3px;
+            }
+        .main img{
+            width: 95%;
+        }
+    }
+
+/* === Footers === */
+.footer{
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: rgba(255, 255, 255, 0);
+    color: #060002;
+    margin: 25%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    /* border: 1px solid #ac1e44; */
+    text-align: center;
+}
+
+.footer p {
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+.footer a{
+    font-weight: bold;
+    color: #ac1e44;
+  }
+
+.footer a:hover{
+    font-weight: bold;
+    color: #ffb6c1;
+    }
+
+
+
+
+@media only screen and (max-width:600px){
+    .gallery img {
+        width: 85%
+        }
+    .gallery figcaption{
+        max-width: 100%;
+        }
+    }
+
+/* tape code from accesssun on github */
+.photo {
+    margin: auto;
+    border: 5px solid #FFF;
+    width: 250px;
+    background-color: #FFF;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    }
+.photo:before {
+    content: "";
+    height: 25px;
+    width: 80px;
+    background-color: rgba(255, 255, 255, .3);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transform: translateX(-30%) translateY(10%) rotate(-45deg);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    }
+.right {
+    float: right;
+    margin-left: 5px;
+    margin-right: 10px;
+    }
+.left {
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+    }  
+
+/* flex-wrap: wrap; 允许子元素换行，这样当空间不足时，它们会自动换行到下一行。 */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Nezhamove{
+    position: relative;
+    animation-name: Nezhamove;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    }
+@keyframes Nezhamove{
+    0% {transform: rotate(2deg);}
+    50% {transform: rotate(-2deg);}
+    100% {transform: rotate(2deg);}
+    }

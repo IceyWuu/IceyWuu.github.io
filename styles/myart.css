@@ -1,0 +1,182 @@
+body {
+    background-color: #fff;
+    font-family: Nunito;
+    color: #ac1e44;
+    /* background-image: url('/images/bg/messy\ lines\ grid.webp'); */
+    background-image: url('../pictures/background/leaves.png');
+    background-size: 350px;
+  }
+
+/* === main working area=== */
+.main {
+    background-color:transparent;
+    color: #ad1f45;
+    overflow: auto;
+    margin: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 3%;
+    padding-top: 1%;
+    text-align: center;
+    }
+
+/* === header === */
+@media only screen and (max-width:600px){
+    #header {
+        font-size: 32px;
+        }
+    }
+
+/* '#'符号用于选择具有特定id属性的元素。也就是说，#header选择的是id为header的元素 */
+#header {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: Strawberry Muffins Demo;
+    }
+      
+.header img {
+    display:block;
+    max-width: 100%;
+    max-height: auto;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+/* === button === */
+.button {
+    background-color: #F5F5F0;
+    border: 1px #ac1e44 solid;
+    border-radius: 4px;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ac1e44;
+    padding: 5px;
+    margin: 0.5%;
+    text-decoration: none;
+    line-height: 40px;
+    }
+.button:hover{
+    background-color: #ac1e44;
+    color: #F5F5F0;
+    border: 1px #F5F5F0 solid;
+    }
+
+/* === text style === */
+.text {
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 18px;
+}
+.headline {
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 当屏幕宽度小于或等于600px时，text类的元素将会有3像素的左边距和右边距。 */
+/* 保证小屏幕的正常查看。@media only screen and (max-width:600px)是媒体查询 */
+@media only screen and (max-width:600px){
+        .text {
+            margin-left: 3px;
+            margin-right: 3px;
+            }
+        .main img{
+            width: 85%;
+        }
+    }
+
+/* === Footers === */
+.footer{
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: rgba(255, 255, 255, 0);
+    color: #ac1e44;
+    margin: 25%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    /* border: 1px solid #ac1e44; */
+    text-align: center;
+}
+
+.footer p {
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+.footer a{
+    font-weight: bold;
+    color: #ac1e44;
+  }
+
+.footer a:hover{
+    font-weight: bold;
+    color: #ffb6c1;
+    }
+
+
+/* ===pics in gallery=== */
+
+
+.gallery {
+    display: block;
+    margin: auto;
+  }
+
+.gallery figure {
+    display: inline-block;
+    text-align: center;
+    /* border: 2px solid; */
+    /* inline-block之间有间隙，让它靠近一点 */
+    margin-right: -4px;
+}
+
+.gallery img {
+    object-fit: contain;
+    max-height: 400px;
+    max-width: 75%;
+    border: 2px solid;
+    border-radius: 3px;
+    border-color: #cda59c;
+    padding: 5px; 
+    }
+
+    
+.gallery figcaption {
+    margin-top: 0px;
+    font-size: 14px;
+    color: #555;
+    max-width: 35vw;
+}
+
+@media only screen and (max-width:600px){
+    .gallery img {
+        width: 85%
+        }
+    .gallery figcaption{
+        max-width: 100%;
+        }
+    }
+
+    
+.Sherrymove{
+    position: relative;
+    animation-name: Sherry;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    }
+@keyframes Sherry{
+    0% {transform: rotate(2deg);}
+    50% {transform: rotate(-2deg);}
+    100% {transform: rotate(2deg);}
+    }
+
+.shugo_cur{
+    /* Start https://www.cursors-4u.com */ 
+    cursor: url(../pictures/random/cursors/shugo1.cur), auto !important; 
+    /* https://www.cursors-4u.com/holidays/?skip=190 */
+}
+    

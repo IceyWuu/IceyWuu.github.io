@@ -1,0 +1,89 @@
+/* body{
+    
+  } */
+
+.flex{
+    display: flex; 
+}
+.white{
+    background-color: white;
+}
+.column{
+    flex-direction: column;
+}
+.flex1{
+    flex: 1;
+}
+
+@font-face {
+    font-family: DancingScript;
+    src: url('../ttf/Dancing\ Script.ttf');
+}
+@font-face {
+    font-family: LonelyCake;
+    src: url('../ttf/LonelyCake.ttf');
+}
+@font-face {
+    font-family: LuckiestGuy;
+    src: url('../ttf/LuckiestGuy.ttf');
+}
+@font-face{ 
+	font-family: "Great Primer";
+	src: url('../ttf/im-fell-great-primer.italic');
+	src: url('../ttf/im-fell-great-primer.italic?#iefix') format('embedded-opentype'),
+	     url('../ttf/im-fell-great-primer.italic.woff') format('woff'),
+	     url('../ttf/im-fell-great-primer.italic.ttf') format('truetype'),
+	     url('../ttf/im-fell-great-primer.italic.svg#filename') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{ 
+	font-family: "Great Primer";
+	src: url('../ttf/im-fell-great-primer.roman');
+	src: url('../ttf/im-fell-great-primer.roman?#iefix') format('embedded-opentype'),
+	     url('../ttf/im-fell-great-primer.roman.woff') format('woff'),
+	     url('../ttf/im-fell-great-primer.roman.ttf') format('truetype'),
+	     url('../ttf/im-fell-great-primer.roman.svg#filename') format('svg');
+	    font-weight: normal;
+        font-style: normal;
+}
+@font-face{ 
+	font-family: "Attic";
+	src: url('../ttf/attic.regular.eot');
+	src: url('../ttf/attic.regular.eot?#iefix') format('embedded-opentype'),
+	     url('../ttf/attic.regular.woff') format('woff'),
+	     url('../ttf/attic.regular.ttf') format('truetype'),
+	     url('../ttf/attic.regular.svg#filename') format('svg');
+}
+
+/* === FONTS ===*/
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    font-style: italic;
+}
+@font-face {
+    font-family: Nunito;
+    src: url('../ttf/Nunito-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+/* Strawberry Muffins Demo */
+@font-face {
+    font-family: Strawberry Muffins Demo;
+    src: url('../ttf/Strawberry\ Muffins\ Demo.ttf');
+}
+
+@font-face {
+    font-family: Valentine Cute;
+    src: url('../ttf//Valentine Cute.ttf');
+}
