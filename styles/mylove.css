@@ -73,7 +73,7 @@ body{
 /* === navigaion bar === */
 nav {
     float: left;
-    width: 30%;
+    width: 25%;
     height: 82vh;
     }
 nav h1 {
@@ -94,23 +94,25 @@ nav li.category {
     background-color: transparent;
     padding: 5px;
     margin-top: 10px;
-    width: 90%;
+    width: 80%;
     text-align: center;
     color: #a64253;
     text-decoration: none;
-    /* border-bottom: 2px solid #650D35; */
+    border-bottom: 2px solid #650D35;
     }
 nav li a {
     display: block;
     background-color: #FFF;
     padding: 5px;
     margin-top: 10px;
-    width: 90%;
+    width: 80%;
     text-align: center;
     color: #9a275a;
     text-decoration: none;
+    /* border: 3px solid #a381ad; */
+    border-radius: 10px;
     /* border-bottom: 2px solid #fcf0cc; */
-    /* box-shadow: 2px 2px #F8F2E2; */
+    box-shadow: 2px 2px #F8F2E2;
     }
 nav li a:hover {
     color: tan;
@@ -124,7 +126,7 @@ nav li s {
     background-color: #FFF;
     padding: 5px;
     margin-top: 10px;
-    width: 90%;
+    width: 80%;
     text-align: center;
     color: #9a275a;
     text-decoration: line-through;
@@ -141,13 +143,13 @@ nav li s {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #f5d7d7;
+    background-color: #e0d7f5;
     border-radius: 20px;
     border: 6px solid transparent;
     background-clip: content-box;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #b18597;
+    background-color: #9c85b1;
 }
 
 /* === Footers === */
@@ -177,4 +179,45 @@ nav li s {
 .footer a:hover{
     font-weight: bold;
     color: #ffb6c1;
+    }
+
+main {
+    width: 70%;
+    overflow-y: scroll;
+    height: 82vh;
+    }
+main h1 {
+    font-family: 'Spectral', serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #a64253;
+    background: -webkit-linear-gradient(40deg, #a64253, #FFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+main h2 {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    text-align: center;
+    color: #761633;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    }
+main h2::before {
+    content: "☙ ";
+    color: #761633;
+    }
+main h2::after {
+    content: " ❧";
+    color: #761633;
+    }
+main p {
+    /* font-family: "Spectral", serif; */
+    font-family: "Spectral", serif;
+    font-style: italic;
+    /* text-align: center; */
+    color: #761648;
+    letter-spacing: 1px;
+    /* opacity: 0.9; */
     }
