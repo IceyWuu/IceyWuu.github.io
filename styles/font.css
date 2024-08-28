@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: DancingScript;
-    src: url('../ttf/Dancing\ Script.ttf');
+    src: url('../ttf/DancingScript.ttf');
 }
 @font-face {
     font-family: LonelyCake;
@@ -86,4 +86,8 @@
 @font-face {
     font-family: Valentine Cute;
     src: url('../ttf//Valentine Cute.ttf');
+}
+@font-face {
+    font-family: StormGust;
+    src: url('../ttf/StormGust.ttf');
 }
