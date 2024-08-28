@@ -1,3 +1,6 @@
+body{
+    background-image: url("../pictures/background/bowtie.jpg");
+}
 #ring{
     width: 50px;
     height: 836px;
