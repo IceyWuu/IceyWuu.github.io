@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Croissant+One");
+
+body {
+  background-color: #FFF7E4;
+  background-image: url("Assets/Image/Paper.png");
+  color: #E36E59;
+  font:16px georgia;
+  cursor: url("../pictures/random/cursors/cursor_bowtie2.png"), auto;
+}
+
+#bouton, #gramophone {
+  cursor: url("../pictures/random/cursors/cursor_bowtie3.png"), pointer;
+}
+
+::selection {
+  background: #f7d9bd;
+}
+
+.title {
+    color: #B04F3E;
+    font-family: Croissant One;
+}
+
+.calendar {
+    color: #B04F3E;
+    background: #f2bea0;
+    font-family: Croissant One;
+    text-align:center;
+}
+
+.animal {
+    background: #fbe3c4;
+}
+
+.outil {
+    background: #f7d9bd;
+}
+
+.jour {
+  color: #B04F3E;
+  background: #f2bea0;
+  font-family: Croissant One;
+}
+
+.form {
+  color: #B04F3E;
+  background: #fffdf6;
+  border: 1px solid #f2bea0;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #E36E59;
+  border: none;
+  font-family: Croissant One;
+  color: #FFF7E4;
+  border-radius: 4px;
+  cursor: url("Assets/Image/Pointer.png"), pointer;
+}
+
+.button:hover{
+  background-color: #B04F3E;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#CultofUsakumya img {
+  display: inline;
+}
+
+.imglist {
+  position: relative;
+  float: left;
+  width: 33%;
+}
+
+.imglist .image {
+ display: block;
+ width: auto;
+ height: auto;
+}
+
+.imglist .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.imglist:hover .overlay{
+    opacity: 1;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: none;
+}
+
+#webimg,
+#webtxt {
+  display: inline-block;
+  vertical-align: middle;
+}
+#web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* links */
+
+/* unvisited link */
+a:link {
+  color: #E36E59;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #E36E59;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #B04F3E;
+  text-decoration: none;
+  cursor: url("Assets/Image/Pointer.png"), pointer;
+}
+
+/* selected link */
+a:active {
+  color: #B04F3E;
+  text-decoration: none;
+}
+
+/* dress up game */
+.dressupgame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.child.ghost{
+    visibility: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+.left{
+  padding-top: 5%;
+  width: 20%;
+}
+
+.middle {
+  width: 50%;
+}
+
+.right {
+  padding-top: 5%;
+  width: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+
+  .imglist{
+    width: 100%;
+  }
+
+  .imglist .overlay{
+      top: 25%;
+      left: 0;
+      width: 50%;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  .visible {
+    display: inline;
+  }
+
+  .row {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .middle {
+    order: 1;
+  }
+
+  .left {
+    order: 3;
+  }
+
+  .right {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .imglist .overlay{
+      top: 25%;
+      left: 0;
+      width: 50%;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  .visible {
+    display: none;
+  }
+}
