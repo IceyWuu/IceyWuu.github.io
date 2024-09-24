@@ -17,10 +17,10 @@
           <!-- Favourite food page. https://sunnieside.neocities.org/links/about -->
 
 </head>
-<body class="flex">
+<body class="flex" style="justify-content: center;">
     <!--side bar-->
-    <div class="white delsidebar" style="width: 200px; z-index: 2;">
-        <!-- avatar -->
+    <!-- <div class="white delsidebar" style="width: 200px; z-index: 2;">
+   
          <div class="flex column avatar" 
             style="
                 align-items: center; 
@@ -33,7 +33,6 @@
                 <div style="font-family: Strawberry Muffins Demo;background-color: #dde8fd;">Icey</div>
          </div>
          
-         <!-- guiding bar -->
           <div class="flex1 column">
             <div class="guidetitle">My Building List</div>
             <div class="guidetext"><del>About me</del></div>
@@ -45,215 +44,239 @@
             <div class="guidetext">My thoughts</div>
             <div class="guidetext">My crazy playground</div>
           </div>
-    </div>
-    <!--major area-->
-    <div class="flex1 column flex">
+    </div> -->
+    
+    <div class="container">
         <!--header-->
         <div class="white flex" style="height: 50px; z-index: 1;">
-
             <div class="dropdown">
                 <button class="dropbtn">About Icey</button>
                 <div class="dropdown-content">
-                  <a href="aboutme.html">Who's Icey</a>
-                  <a href="/mylove/index.html">My love</a>
-                  <a href="./myart/index.html">My arts</a>
-                  <a href="./mydiary/mydiary.html">My diary</a>
+                <a href="aboutme.html">Who's Icey</a>
+                <a href="/mylove/index.html">My love</a>
+                <a href="./myart/index.html">My arts</a>
+                <a href="./mydiary/mydiary.html">My diary</a>
                 </div>
             </div> 
             <div class="dropdown">
                 <button class="dropbtn">Icey's favourite</button>
                 <div class="dropdown-content">
-                  <a href="./places/index.html">Places</a>
-                  <a href="./friends/aboutu.html">Friends</a>
-                  <a href="animals.html">Animals</a>
-                  <!-- <a href="not_found.html">My art</a> -->
+                <a href="./places/index.html">Places</a>
+                <a href="./friends/aboutu.html">Friends</a>
+                <a href="animals.html">Animals</a>
+                <!-- <a href="not_found.html">My art</a> -->
                 </div>
             </div> 
         </div>
 
-
-        <!--content-->
-        <div class="flex1 flex colcontent" style="overflow: auto;">
-            <!--left-->
-            <div class="flex column mg8" style="flex:5;">
-                <!-- data -->
-                <div class="flex white coldata">
-                    <!-- data block -->
-                     <div class="flex1 mgr8 mardata" style="height: 200px;"><a href="/not_found.html">link test</a></div>
-                     <div class="flex1 mgr8 mardata gallery" style="height: 200px; background-color: #eaeaea;">
-                        <!-- data box 2 -->
-                        <!-- Sandou's cat. -->
-                         <figure>
-                            <img src="./pictures/random/sandou.jpg" height="100%">
-                            <figcaption>Sandou's cat.(She asked me to put this on.)</figcaption>
-                         </figure>
-                         
-                        
-                    </div>
-                     <div class="flex1 mgr8 " style="height: 200px; background-color: rgb(250, 215, 215);">
-                        <div>
-                            <p class="music">
-                                Music Player
-                            </p>
-                        </div>
-                        <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
-                        <div id="musicplayer">
-                            <div>
-                                <marquee scrollamount="5" class="songtitle"></marquee>
-                            </div>
-                            <table class="controls" >
-                                <tr>
-                                    <td>
-                                        <div class="prev-track" onclick="prevTrack()" >
-                                            <i class="fas fa-backward"></i>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="playpause-track" onclick="playpauseTrack()">
-                                            <i class="fas fa-play"></i>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="next-track" onclick="nextTrack()">
-                                            <i class="fas fa-forward"></i>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="seeking">
-                                <div class="current-time">00:00</div>
-                                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                                <div class="total-duration">0:00</div>
-                            </div>
-                            <audio id="music" src=""></audio>
-                        </div>
-                        <script>
-                            // initiate variables
-                            let track_name = document.querySelector(".songtitle");
-
-                            let playpause_btn = document.querySelector(".playpause-track");
-                            let next_btn = document.querySelector(".next-track");
-                            let prev_btn = document.querySelector(".prev-track");
-
-                            let seek_slider = document.querySelector(".seek_slider");
-                            let curr_time = document.querySelector(".current-time");
-                            let total_duration = document.querySelector(".total-duration");
-
-                            let track_index = 0;
-                            let isPlaying = false;
-                            let updateTimer;
-
-                            // create new audio element
-                            let curr_track = document.getElementById("music");
-
-                            //
-                            // DEFINE YOUR SONGS HERE!!!!!
-                            let track_list = [{
-                                name: "Can't take my eyes off you",
-                                path: "./songs/CantTakeMyEyesOffYou.mp3"
-                            }, {
-                            //     name: "This is for my baby!",
-                            //     path: "./songs/HappyBirthday.mp3"
-                            // }, {
-                                name: "K.K. Slider & K.K. House ",
-                                path: "https://dl.dropbox.com/scl/fi/sipkmflwkdoa7pg3tmr1w/K.K.-House-K.K.-Slider.mp3?rlkey=vq5ffkso5rncwzjno9n9bpj8n&st=z71kzk97&dl=0"
-                            }, ];
-                            //
-                            //
-                            //
-                            //
-                            //
-                            // load the first track in the tracklist
-                            loadTrack(track_index);
-                        </script>
-                    </div>
-
-                </div>
-                <!-- list -->
-                 <div class="flex column">
-                    <div class="white mgt8 content3" style=" font-family: Nunito; font-size: 20px;">
-                        <span class="content3_head">
-                            Don't want to go to school😭<br>Noooooooooooo<br>Nooooooo<br>
-                        </span>
-                        <p class="content3_text" style="text-align: right;">
-                            24 Agu 28
-                        </p>
-                        
-                    </div>
-                    <div class="white mgt8 content2"  onclick="location.href='./mylove/mylove2024bth.html';">
-                        <span class="content2_head">Breaking news!</span><br>
-                        <p class="content2_text">
-                            Agu 24.  Today's  my  bbcat's  birt hday!  It's your second birt hday   wit h  me! 
-                            The second song in my music player is for you bb!
-                            Wish you happy birt hday! Click me!</p>
-                    </div>
-                    <div class="white mgt8" style="height: 150px;">Ad space for $2 a month (joking)</div>
-                    <div class="white mgt8" style="height: 150px;">c4. under construction.</div>
-
-                 </div>
-            </div>
-            <!--right-->
-            <div class="flex column mgr8 mgt8 marright" style="flex:3">
-                <!-- update -->
-                 <!-- <div class="white" style="height: 300px; padding: 5px;">This website is under construction.🏗️</div> -->
-                 <div class="white" style="
-                                        height:310px; 
-                                        overflow:auto; 
-                                        border: solid 2px; 
-                                        border-color: #6c6276; 
-                                        margin-top: 10px; 
-                                        padding: 8px; 
-                                        margin-bottom: 10px;">
-                    This website is under construction.🏗️
-                    <h2><span class="highlight-container"><span class="highlight">updates</span></span></h2>
-                    <h3>2024.08.28</h3>
-                    <p>Add friends page.</p>
-                    <h3>2024.08.27</h3>
-                    <p>Add stories in my love.</p>
-                    <h3>2024.08.23</h3>
-                    <p>Add my first news!</p>
-                    <h3>2024.08.22</h3>
-                    <p>Hung multiple images for my favourite places!</p>
-                    <h3>2024.08.21</h3>
-                    <p>Add my places and animals pages! Help Sherry(she's in my gallery) learn the magic of flight.
-                        Add music player! OMG I'm so hardworking.
-                    </p>
-                    <h3>2024.08.20</h3>
-                    <p>Hung multiple images for my art gallery!</p>
-                    <h3>2024.08.19</h3>
-                    <p>Add updates.</p>
-
-                 </div>
-                 <!-- messages -->
-                  <div class="white mgt8" style="height: 300px;">
-                    <div style="background-color: powderblue; font-family: Valentine Cute;"> Icey's chat box</div>
-                    
-                    <iframe 
-                        src="https://www3.cbox.ws/box/?boxid=3540103&boxtag=jHcP7o"
-                        width="100%" 
-                        height="400" 
-                        allowtransparency="yes" 
-                        allow="autoplay" 
-                        frameborder="0" 
-                        marginheight="0" 
-                        marginwidth="0" 
-                        scrolling="auto">
-                    </iframe>	
-                  </div>
-            </div>
+        <!-- Theme picture -->
+        <div class="theme">
+            <img src="./pictures/mylove/lego_build.png">
         </div>
-        <!-- copy rights -->
-        <div class="flex column" style="justify-content: center; align-items: center;">
-            <footer>
-                © 2024-<script>document.write(new Date().getFullYear())</script>
-            </footer>
-            <footer>
-                <strong>Created independently, to record my life.</strong>
-            </footer>
-            <footer>
-                Best viewed on a desktop.
-            </footer>
+        <!--major area-->
+        <div class="flex1 column flex">
+
+
+
+            <!--content-->
+            <div class="flex1 flex colcontent">
+                <!-- style="overflow: auto;" -->
+                <!--left-->
+                <div class="flex column mg8" style="flex:5;">
+                    <!-- data -->
+                    <div class="flex white coldata">
+                        <!-- data block -->
+                        <div class="flex1 mgr8 mardata" style="height: 200px;"><a href="/not_found.html">link test</a></div>
+                        <div class="flex1 mgr8 mardata gallery" style="height: 200px; background-color: #eaeaea;">
+                            <!-- data box 2 -->
+                            <!-- Sandou's cat. -->
+                            <figure>
+                                <img src="./pictures/random/sandou.jpg" height="100%">
+                                <figcaption>Sandou's cat.(She asked me to put this on.)</figcaption>
+                            </figure>
+                            
+                            
+                        </div>
+                        <div class="flex1 mgr8 " style="height: 200px; background-color: rgb(250, 215, 215);">
+                            <div>
+                                <p class="music">
+                                    Music Player
+                                </p>
+                            </div>
+                            <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+                            <div id="musicplayer">
+                                <div>
+                                    <marquee scrollamount="5" class="songtitle"></marquee>
+                                </div>
+                                <table class="controls" >
+                                    <tr>
+                                        <td>
+                                            <div class="prev-track" onclick="prevTrack()" >
+                                                <i class="fas fa-backward"></i>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="playpause-track" onclick="playpauseTrack()">
+                                                <i class="fas fa-play"></i>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="next-track" onclick="nextTrack()">
+                                                <i class="fas fa-forward"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="seeking">
+                                    <div class="current-time">00:00</div>
+                                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                                    <div class="total-duration">0:00</div>
+                                </div>
+                                <audio id="music" src=""></audio>
+                            </div>
+                            <script>
+                                // initiate variables
+                                let track_name = document.querySelector(".songtitle");
+
+                                let playpause_btn = document.querySelector(".playpause-track");
+                                let next_btn = document.querySelector(".next-track");
+                                let prev_btn = document.querySelector(".prev-track");
+
+                                let seek_slider = document.querySelector(".seek_slider");
+                                let curr_time = document.querySelector(".current-time");
+                                let total_duration = document.querySelector(".total-duration");
+
+                                let track_index = 0;
+                                let isPlaying = false;
+                                let updateTimer;
+
+                                // create new audio element
+                                let curr_track = document.getElementById("music");
+
+                                //
+                                // DEFINE YOUR SONGS HERE!!!!!
+                                let track_list = [{
+                                    name: "Can't take my eyes off you",
+                                    path: "./songs/CantTakeMyEyesOffYou.mp3"
+                                }, {
+                                //     name: "This is for my baby!",
+                                //     path: "./songs/HappyBirthday.mp3"
+                                // }, {
+                                    name: "K.K. Slider & K.K. House ",
+                                    path: "https://dl.dropbox.com/scl/fi/sipkmflwkdoa7pg3tmr1w/K.K.-House-K.K.-Slider.mp3?rlkey=vq5ffkso5rncwzjno9n9bpj8n&st=z71kzk97&dl=0"
+                                }, ];
+                                //
+                                //
+                                //
+                                //
+                                //
+                                // load the first track in the tracklist
+                                loadTrack(track_index);
+                            </script>
+                        </div>
+
+                    </div>
+                    <!-- list -->
+                    <div class="flex column">
+                        <div class="white mgt8 content3" style=" font-family: Nunito; font-size: 20px;">
+                            <span class="content3_head">
+                                Don't want to go to school😭<br>Noooooooooooo<br>Nooooooo<br>
+                            </span>
+                            <p class="content3_text" style="text-align: right;">
+                                24 Agu 28
+                            </p>
+                            
+                        </div>
+                        <div class="white mgt8 content2"  onclick="location.href='./mylove/mylove2024bth.html';">
+                            <span class="content2_head">Breaking news!</span><br>
+                            <p class="content2_text">
+                                Agu 24.  Today's  my  bbcat's  birt hday!  It's your second birt hday   wit h  me! 
+                                The second song in my music player is for you bb!
+                                Wish you happy birt hday! Click me!</p>
+                        </div>
+                        <div class="white mgt8" style="height: 150px;">Ad space for $2 a month (joking)</div>
+                        <div class="white mgt8" style="height: 150px;">c4. under construction.</div>
+
+                    </div>
+                </div>
+                <!--right-->
+                <div class="flex column mgr8 mgt8 marright" style="flex:3">
+                        <!-- avatar -->
+                    <div class="flex column avatar" 
+                        style="
+                            align-items: center; 
+                            justify-content: center;">
+                        <img 
+                            src="./pictures/random/me.png" 
+                            width="150px"
+                            height="150px"
+                            alt="">
+                            <div style="font-family: Strawberry Muffins Demo;background-color: #dde8fd;">Icey</div>
+                    </div>
+                    <!-- update -->
+                    <!-- <div class="white" style="height: 300px; padding: 5px;">This website is under construction.🏗️</div> -->
+                    <div class="white" style="
+                                            height:310px; 
+                                            overflow:auto; 
+                                            border: solid 2px; 
+                                            border-color: #6c6276; 
+                                            margin-top: 10px; 
+                                            padding: 8px; 
+                                            margin-bottom: 10px;">
+                        This website is under construction.🏗️
+                        <h2><span class="highlight-container"><span class="highlight">updates</span></span></h2>
+                        <h3>2024.09.20</h3>
+                        <p>Update my diary.</p>
+                        <h3>2024.08.28</h3>
+                        <p>Add friends page.</p>
+                        <h3>2024.08.27</h3>
+                        <p>Add stories in my love.</p>
+                        <h3>2024.08.23</h3>
+                        <p>Add my first news!</p>
+                        <h3>2024.08.22</h3>
+                        <p>Hung multiple images for my favourite places!</p>
+                        <h3>2024.08.21</h3>
+                        <p>Add my places and animals pages! Help Sherry(she's in my gallery) learn the magic of flight.
+                            Add music player! OMG I'm so hardworking.
+                        </p>
+                        <h3>2024.08.20</h3>
+                        <p>Hung multiple images for my art gallery!</p>
+                        <h3>2024.08.19</h3>
+                        <p>Add updates.</p>
+
+                    </div>
+                    <!-- messages -->
+                    <div class="white mgt8" style="height: 300px;">
+                        <div style="background-color: powderblue; font-family: Valentine Cute;"> Icey's chat box</div>
+                        
+                        <iframe 
+                            src="https://www3.cbox.ws/box/?boxid=3540103&boxtag=jHcP7o"
+                            width="100%" 
+                            height="400" 
+                            allowtransparency="yes" 
+                            allow="autoplay" 
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0" 
+                            scrolling="auto">
+                        </iframe>	
+                    </div>
+                </div>
+            </div>
+            <!-- copy rights -->
+            <div class="flex column" style="justify-content: center; align-items: center;">
+                <footer>
+                    © 2024-<script>document.write(new Date().getFullYear())</script>
+                </footer>
+                <footer>
+                    <strong>Created independently, to record my life.</strong>
+                </footer>
+                <footer>
+                    Best viewed on a desktop.
+                </footer>
+            </div>
         </div>
     </div>
+
 </body>
 </html>

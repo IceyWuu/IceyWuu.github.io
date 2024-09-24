@@ -11,7 +11,8 @@ body{
     background-size: 100px 100px;
     background-color: #ed4c4c40; */
 
-    background-image: url(../pictures/background/strawbe.gif);
+    /* background-image: url(../pictures/background/strawbe.gif); */
+    background-image: url(../pictures/background/pinkbunny2.png);
 
     cursor: url('../pictures/random/cursors/cursor_kuma.gif'), default;
 }
@@ -389,4 +390,23 @@ input[type=range]::-moz-range-thumb {
     font-size: 14px;
     color: #555;
     max-width: 35vw;
+}
+
+.container{
+    display: flex;
+    max-width: 80%;
+    flex-direction: column;
+}
+
+.theme{
+    text-align: center;
+}
+@media(max-width:600px){
+    .container{
+        max-width: 100%;
+    }
+    .theme{
+        max-height: 200px;
+        overflow: auto;
+    }
 }
