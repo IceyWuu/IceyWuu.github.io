@@ -20,6 +20,7 @@ Feel free to reach me at 📧 <a href="mailto:iceywufw&#64;outlook.com">iceywufw
 # <span class="section-number">01</span> News
 <ul class="news-list">
 <li>2026.10: Our preprint on <em>hindsight-privileged token credit for RLVR</em> is released on <a href="https://arxiv.org/abs/2610.20497">arXiv</a>. <a href="#chen2026hindsight">[Paper ↓]</a></li>
+<li>2026.10: Our preprint on <em>stochastic pruning of the DPO computation graph</em> is released on <a href="https://arxiv.org/abs/2610.29538">arXiv</a>. <a href="#wu2026stochastic">[Paper ↓]</a></li>
 <li>2026.06: I started as an <strong>AI Model Engineer Intern</strong> in an industry AI team, working on multimodal post-training and asynchronous distributed GRPO training.</li>
 <li>2026.05: Our paper about <em>disentangled preference optimization</em> is accepted to <strong>ICML 2026</strong>. <a href="#wu2026towards">[Paper ↓]</a></li>
 <li>2026.01: Our paper about <em>lightweight image super-resolution</em> is accepted to <strong>IEEE ICASSP 2026</strong> (Barcelona, May 4–8). <a href="#wu2026redundancy">[Paper ↓]</a></li>
@@ -49,6 +50,16 @@ Feel free to reach me at 📧 <a href="mailto:iceywufw&#64;outlook.com">iceywufw
 
 </div>
 
+<span class='anchor' id='wu2026stochastic'></span>
+
+<div class="publication-entry" markdown="1">
+
+<span class="publication-venue">arXiv 2026</span> [**Stochastic Pruning of the DPO Computation Graph: 1.4× Faster Training and Lower Peak Memory**](https://arxiv.org/abs/2610.29538)<br>
+**`Yubing Wu`**, Wei Chen, Junmei Yang, Delu Zeng, Tiewen Pan<br>
+[Paper](https://arxiv.org/abs/2610.29538) · <a href="#" onclick="return copyBib('wu2026stochastic', event)" style="color: #666; font-size: 0.9em;">[Bib]</a>
+
+</div>
+
 <span class='anchor' id='chen2026hindsight'></span>
 
 <div class="publication-entry" markdown="1">
@@ -59,18 +70,8 @@ Wei Chen, **`Yubing Wu`**, Zhou Xu, Haoyue Zhang, Delu Zeng, Jiahao Wang, Junmei
 
 </div>
 
-<span class='anchor' id='research'></span>
-# <span class="section-number">03</span> Ongoing Research
-
-<div class="publication-entry" markdown="1">
-
-<span class="publication-venue">Manuscript</span> **Stochastic Pruning of the DPO Computation Graph: 1.4× Faster Training and Lower Peak Memory**<br>
-Studying stochastic DPO computation along three independently controlled axes — response positions, response prefixes, and preference branches. Branch sampling yields a conditionally unbiased single-branch gradient estimator and a 1.426× step-time speedup over concatenated DPO, while position and sequence pruning primarily reduce peak memory.
-
-</div>
-
 <span class='anchor' id='honors'></span>
-# <span class="section-number">04</span> Honors and Awards
+# <span class="section-number">03</span> Honors and Awards
 <div class="quiet-note">
   <ul>
     <li><b>Goodix Technology Scholarship</b> (M.S., SCUT)</li>
@@ -82,7 +83,7 @@ Studying stochastic DPO computation along three independently controlled axes �
 </div>
 
 <span class='anchor' id='education'></span>
-# <span class="section-number">05</span> Education
+# <span class="section-number">04</span> Education
 <div class="entry-list">
 <div class="profile-entry">
   <img src="images/scut.png" alt="SCUT">
@@ -102,7 +103,7 @@ Studying stochastic DPO computation along three independently controlled axes �
 </div>
 
 <span class='anchor' id='internships'></span>
-# <span class="section-number">06</span> Internships
+# <span class="section-number">05</span> Internships
 <div class="entry-list">
 <div class="profile-entry" style="grid-template-columns: minmax(0, 1fr);">
   <div>
@@ -117,6 +118,7 @@ Studying stochastic DPO computation along three independently controlled axes �
 var bibData = {
   "wu2026towards": "@inproceedings{wu2026towards,\n  title={Towards Disentangled Preference Optimization Dynamics: Suppress the Loser, Preserve the Winner},\n  author={Wei Chen and Yubing Wu and Junmei Yang and Delu Zeng and Qibin Zhao and John Paisley and Min Chen and Zhou Wang},\n  booktitle={International Conference on Machine Learning (ICML)},\n  year={2026},\n  note={Wei Chen and Yubing Wu contributed equally},\n  url={https://arxiv.org/abs/2604.18239}\n}",
   "wu2026redundancy": "@inproceedings{wu2026redundancy,\n  title={Redundancy-Aware Feature Refinement for Lightweight Image Super-Resolution},\n  author={Yubing Wu and Yican Liu and Yuqi Pang and Tiewen Pan and Junmei Yang and Delu Zeng},\n  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},\n  year={2026},\n  url={https://doi.org/10.1109/ICASSP55912.2026.11464928}\n}",
+  "wu2026stochastic": "@misc{wu2026stochastic,\n  title={Stochastic Pruning of the DPO Computation Graph: 1.4x Faster Training and Lower Peak Memory},\n  author={Yubing Wu and Wei Chen and Junmei Yang and Delu Zeng and Tiewen Pan},\n  year={2026},\n  eprint={2610.29538},\n  archivePrefix={arXiv},\n  url={https://arxiv.org/abs/2610.29538}\n}",
   "chen2026hindsight": "@misc{chen2026hindsight,\n  title={Hindsight-Privileged RLVR: Single-Rollout Token Credit Without Group Sampling},\n  author={Wei Chen and Yubing Wu and Zhou Xu and Haoyue Zhang and Delu Zeng and Jiahao Wang and Junmei Yang and Tiewen Pan and Jingfeng Liu and Zhiheng Zhou and Bo Li and Min Chen},\n  year={2026},\n  eprint={2610.20497},\n  archivePrefix={arXiv},\n  url={https://arxiv.org/abs/2610.20497}\n}"
 };
 
