@@ -74,7 +74,7 @@ Studying stochastic DPO computation along three independently controlled axes â€
 <div class="quiet-note">
   <ul>
     <li><b>Goodix Technology Scholarship</b> (M.S., SCUT)</li>
-    <li><b>Bambu Lab Scholarship</b>; <b>Outstanding Graduate Student Union Member</b></li>
+    <li><b>Outstanding Graduate Student Union Member</b></li>
     <li><b>University-Level First-Class Scholarship</b>; <b>Outstanding Student</b>, Ocean University of China</li>
     <li><b>National Second Prize</b>, National Marine Vehicle Design and Production Competition</li>
     <li><b>Provincial Second Prize</b>, Mathematical Modeling Competition; <b>Provincial Second Prize</b>, Intelligent Car Competition</li>
