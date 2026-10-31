@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am an M.S. student in Information and Communication Engineering at the School of Electronic and Information Engineering, <a href="https://www.scut.edu.cn/en/">South China University of Technology (SCUT, 华南理工大学)</a>, Guangzhou. I received my B.Eng. degree in Electronic Information Engineering from <a href="https://www.ouc.edu.cn/en/">Ocean University of China (OUC, 中国海洋大学)</a>.
+I am an M.S. student in Information and Communication Engineering at the School of Electronic and Information Engineering, <a href="https://www.scut.edu.cn/en/">South China University of Technology (SCUT, 华南理工大学)</a>, Guangzhou, advised by Prof. <a href="https://scholar.google.com/citations?user=08RCdoIAAAAJ&hl=zh-CN">Delu Zeng</a>. I received my B.Eng. degree in Electronic Information Engineering from <a href="https://www.ouc.edu.cn/en/">Ocean University of China (OUC, 中国海洋大学)</a>.
 
 My research focuses on <strong>efficient training and post-training of language models</strong>, <strong>reinforcement learning and credit assignment for long-horizon agent tasks</strong>, and <strong>model and agent safety and alignment</strong>. My work has appeared at ICML and IEEE ICASSP, and I enjoy turning analyses of preference optimization and RL dynamics into practical, faster training recipes.
 
