@@ -74,11 +74,11 @@ Wei Chen, **`Yubing Wu`**, Zhou Xu, Haoyue Zhang, Delu Zeng, Jiahao Wang, Junmei
 # <span class="section-number">03</span> Honors and Awards
 <div class="quiet-note">
   <ul>
-    <li><b>Goodix Technology Scholarship</b> (M.S., SCUT)</li>
-    <li><b>Outstanding Graduate Student Union Member</b></li>
-    <li><b>University-Level First-Class Scholarship</b>; <b>Outstanding Student</b>, Ocean University of China</li>
-    <li><b>National Second Prize</b>, National Marine Vehicle Design and Production Competition</li>
-    <li><b>Provincial Second Prize</b>, Mathematical Modeling Competition; <b>Provincial Second Prize</b>, Intelligent Car Competition</li>
+    <li>2026 — <b>Goodix Technology Scholarship</b>, South China University of Technology</li>
+    <li>2026 — <b>Outstanding Member, Graduate Student Union</b></li>
+    <li>2024 — <b>First-Class Scholarship</b> and <b>Outstanding Student Award</b>, Ocean University of China</li>
+    <li>2023 — <b>National Second Prize</b>, National Marine Vehicle Design and Production Competition</li>
+    <li>2023 — <b>Provincial Second Prize</b>, China Undergraduate Mathematical Contest in Modeling (CUMCM); <b>Provincial Second Prize</b>, National University Students Intelligent Car Race</li>
   </ul>
 </div>
 
@@ -93,11 +93,12 @@ Wei Chen, **`Yubing Wu`**, Zhou Xu, Haoyue Zhang, Delu Zeng, Jiahao Wang, Junmei
     <div class="entry-meta">2024.09 – 2027.06 (expected) · Admitted through recommendation · Academic score: 89.36 · Goodix Technology Scholarship</div>
   </div>
 </div>
-<div class="profile-entry" style="grid-template-columns: minmax(0, 1fr);">
+<div class="profile-entry">
+  <img src="images/ouc.png" alt="Ocean University of China (OUC) emblem" width="72" height="72" loading="lazy">
   <div>
     <div class="entry-title">B.Eng. in Electronic Information Engineering</div>
     <div class="entry-detail">Ocean University of China (OUC)</div>
-    <div class="entry-meta">2020.09 – 2024.06 · GPA: 3.64/4 (Rank: 8/100) · University-Level First-Class Scholarship</div>
+    <div class="entry-meta">2020.09 – 2024.06 · GPA: 3.64/4 (Rank: 8/100) · First-Class Scholarship</div>
   </div>
 </div>
 </div>

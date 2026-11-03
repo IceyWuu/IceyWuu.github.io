@@ -15,6 +15,10 @@ Site-wide settings (name, avatar, email, GitHub, site description, navigation me
 
 Profile photo: `images/yubing.jpg`. Favicon / touch icon are generated from it (`images/favicon-32.png`, `images/apple-touch-icon.png`).
 
+OUC emblem: `images/ouc.png`, cropped and resized from the official PNG package on [Ocean University of China's visual identity page](https://news.ouc.edu.cn/2021/0610/c321a105822/page.htm).
+
+Award terminology references: [CUMCM introduction](https://www.mcm.edu.cn/html_en/section/b77a1402496e05863c96de6120931806.html), [National University Students Intelligent Car Race regulations](https://cxcyxy.chnu.edu.cn/xkjs/content_114721), and [the 2023 marine vehicle competition host's English announcement](https://english.hrbeu.edu.cn/info/1103/3578.htm).
+
 ## Run locally
 
 Requires Ruby and Bundler.
