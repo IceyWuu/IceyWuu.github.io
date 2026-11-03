@@ -75,7 +75,7 @@ Wei Chen, **`Yubing Wu`**, Zhou Xu, Haoyue Zhang, Delu Zeng, Jiahao Wang, Junmei
 <div class="quiet-note">
   <ul>
     <li>2026 — <b>Goodix Technology Scholarship</b>, South China University of Technology</li>
-    <li>2026 — <b>Outstanding Member, Graduate Student Union</b></li>
+    <li>2026 — <b>Outstanding Student Leader, Graduate Student Union</b></li>
     <li>2024 — <b>First-Class Scholarship</b> and <b>Outstanding Student Award</b>, Ocean University of China</li>
     <li>2023 — <b>National Second Prize</b>, National Marine Vehicle Design and Production Competition</li>
     <li>2023 — <b>Provincial Second Prize</b>, China Undergraduate Mathematical Contest in Modeling (CUMCM); <b>Provincial Second Prize</b>, National University Students Intelligent Car Race</li>
